@@ -1,18 +1,17 @@
-# Ultimate Proxy Master 🚀
-
-An advanced, high-performance proxy scraper and checker. Automatically harvests thousands of free proxies from 80+ sources, verifies them using multithreading, and filters them by target URL (like Discord/Netflix) or country. Features an integrated SQLite database for easy management.
-
-Developed by: [github.com/mootoo11](https://github.com/mootoo11)
+<div align="center">
+  <h1>🚀 Ultimate Proxy Master</h1>
+  <p>An enterprise-grade, ultra-fast proxy scraper and checker developed by <a href="https://github.com/mootoo11">@mootoo11</a></p>
+</div>
 
 ---
 
-## 🔥 Features
-- **Scrape & Check**: Harvest thousands of free HTTP, SOCKS4, and SOCKS5 proxies from over 80+ sources and verify them concurrently.
-- **Target Checker**: Check proxies against a specific target URL (e.g., Discord, Netflix, etc.).
-- **Local List Checker**: Quickly check a list of proxies saved on your device (v21.0 FAST only).
-- **View Stats**: Detailed intelligence on your live proxies (protocols, countries, types) stored in a local SQLite database.
-- **Filter**: Filter your checked proxies by Country.
-- **High Performance**: Uses `ThreadPoolExecutor` and background Daemon writers for fast checking without blocking I/O.
+## 🔥 Enterprise Features
+- **High-Speed Scrape & Check**: Harvest thousands of free HTTP, SOCKS4, and SOCKS5 proxies from over 80+ premium sources and verify them concurrently.
+- **Target URL Verification**: Ensure proxies work against specific endpoints (e.g., Discord, Netflix, Google).
+- **Offline List Checking**: Import your own premium proxy lists and verify them rapidly.
+- **Database Intelligence**: Stores comprehensive data (speed, anonymity, protocol, country) in a robust local SQLite database.
+- **Advanced Filtering**: Export and filter live proxies by specific Country Codes.
+- **Asynchronous Architecture**: Built with `ThreadPoolExecutor` and background Daemon queues to ensure maximum throughput with zero I/O blocking.
 
 ## 🛠️ Installation
 
@@ -22,27 +21,21 @@ Developed by: [github.com/mootoo11](https://github.com/mootoo11)
    cd Ultimate-Proxy-Master
    ```
 
-2. Install the required dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 🚀 Usage
+## 🚀 Quick Start
 
-The project includes two versions. We highly recommend using the Fast version for the best performance.
-
-### Run the Fast Version (v21.0)
-This version uses background Daemon queues to ensure maximum speed without IO blocking.
+Run the primary application (Engine v21.0 - High Performance):
 ```bash
-python sss.py
+python proxy_master.py
 ```
 
-### Run the Standard Version (v20.0)
-```bash
-python pro.py
-```
+*Note: For backward compatibility, the older synchronous version is included as `legacy_version.py`.*
 
-## 📜 Requirements
+## 📜 System Requirements
 - Python 3.8+
 - `requests`
 - `colorama`
